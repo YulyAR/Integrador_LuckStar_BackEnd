@@ -81,4 +81,9 @@ public class ProveedorController {
     public ResponseEntity<StandardResponse<List<ProveedorDTO>>> buscarProveedores() {
         return ResponseEntity.ok(new StandardResponse<>(StandardResponse.StatusStandardResponse.OK, proveedorFacade.buscarProveedores()));
     }
+
+    @GetMapping("/prueba-yal")
+    public String prueba(){
+        return "Hola funciono bien. ";
+    }
 }
